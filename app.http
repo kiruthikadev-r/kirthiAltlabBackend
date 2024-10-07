@@ -1,0 +1,97 @@
+###
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "name":"priya",
+    "email":"priya@gmail.com",
+    "password":"checking"
+}
+
+###
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "name":"priyaravikumar",
+    "email":"priyaravikumar@gmail.com",
+    "password":"checking"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "name":"kiruthikaravikumar",
+    "email":"kiruthikaravikumar@gmail.com",
+    "password":"checking"
+}
+
+
+###
+POST http://localhost:5000/api/auth/admin/register
+Content-Type: application/json
+
+{
+    "name":"kiruthika",
+    "email":"kiruthikar@gmail.com",
+    "password":"checking",
+    "isTopAdmin":false
+}
+
+//create ticket
+###
+###
+GET http://localhost:5000/api/tickets/agent/tickets
+uniqueId: dc22379d-a9eb-4201-8d06-3b021867f5b0
+Content-Type: application/json
+
+{
+    "title":"kiruthikapriya",
+    "customer":"dc22379d-a9eb-4201-8d06-3b021867f5b0"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "name":"kiru",
+    "email":"kiruthikakiruu@gmail.com",
+    "password":"checking"
+}
+
+###
+
+POST http://localhost:5000/api/tickets/tickets/52025f5d-a36d-412f-afcc-8e02359295d6/notes
+uniqueId:9596b4fd-359b-4b98-80be-5aa294964f19
+Content-Type: application/json
+
+{
+    "title":"ticket from jk",
+    "content":"working sir ipo check panuga",
+    "uniqueId":"9596b4fd-359b-4b98-80be-5aa294964f19"
+}
+
+###
+PUT http://localhost:5000/api/tickets/tickets/52025f5d-a36d-412f-afcc-8e02359295d6/status 
+Content-Type: application/json
+uniqueId:9596b4fd-359b-4b98-80be-5aa294964f19
+
+
+{
+    "status":"Pending"
+}
+
+###
+POST http://localhost:5000/api/tickets/tickets
+uniqueId:85dd6146-a8c3-4e43-b548-327e4cba6e91
+Content-Type: application/json
+
+{
+    "title":"ticket from kiruthi with name 2nd",
+    "content":"working sir ipo check panuga"
+}
+
+
